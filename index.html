@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronômetro Cyberpunk</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- BOTÃO MÚSICA -->
+  <button id="musicBtn" class="corner-button left">
+    🎵
+  </button>
+
+  <!-- BOTÃO ALARME -->
+  <button id="alarmBtn" class="corner-button right">
+    🔔
+  </button>
+
+  <div class="container">
+
+    <h1>⛧ SISTEMA EM CONTAGEM ⛧</h1>
+
+    <div id="timer">40:00</div>
+
+    <div class="buttons">
+      <button id="startBtn">INICIAR</button>
+      <button id="pauseBtn">PARAR</button>
+      <button id="resetBtn">REINICIAR</button>
+    </div>
+
+  </div>
+
+  <!-- SUA MÚSICA -->
+  <audio id="cyberMusic" preload="auto" loop>
+
+    <source
+      src="https://files.catbox.moe/0vv5xh.mp3"
+      type="audio/mpeg">
+
+  </audio>
+
+  <!-- ALARME -->
+  <audio id="alarmSound" preload="auto">
+
+    <source
+      src="https://files.catbox.moe/lb19m5.mp3"
+      type="audio/mpeg">
+
+  </audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
